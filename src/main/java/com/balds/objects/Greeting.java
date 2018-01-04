@@ -1,4 +1,4 @@
-package com.example.objects;
+package com.balds.objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

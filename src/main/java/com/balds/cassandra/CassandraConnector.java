@@ -1,4 +1,4 @@
-package com.example.cassandra;
+package com.balds.cassandra;
 
 import com.datastax.driver.mapping.Mapper;
 import com.datastax.driver.mapping.MappingManager;

@@ -1,4 +1,4 @@
-package com.example.dao;
+package com.balds.dao;
 
 import static com.datastax.driver.core.querybuilder.QueryBuilder.eq;
 
@@ -8,6 +8,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.balds.cassandra.CassandraConnector;
+import com.balds.cassandra.PersonTable;
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.ResultSet;
@@ -15,8 +17,6 @@ import com.datastax.driver.core.Row;
 import com.datastax.driver.core.Statement;
 import com.datastax.driver.core.querybuilder.QueryBuilder;
 import com.datastax.driver.mapping.Result;
-import com.example.cassandra.CassandraConnector;
-import com.example.cassandra.PersonTable;
 
 @Component
 public class PersonDAO {

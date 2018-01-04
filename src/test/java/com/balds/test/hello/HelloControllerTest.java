@@ -1,4 +1,4 @@
-package com.example.test.hello;
+package com.balds.test.hello;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import com.example.Application;
+import com.balds.Application;
 
 
 @RunWith(SpringRunner.class)

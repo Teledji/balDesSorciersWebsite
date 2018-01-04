@@ -1,12 +1,12 @@
-package com.example.controller;
+package com.balds.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.controllerInterface.GreetingControllerInterface;
-import com.example.objects.Greeting;
+import com.balds.controllerInterface.GreetingControllerInterface;
+import com.balds.objects.Greeting;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:9000") 

@@ -1,29 +1,24 @@
-package com.example.cassandra;
+package com.balds.objects;
 
+public class Person {
 
-
-import com.datastax.driver.mapping.annotations.Column;
-import com.datastax.driver.mapping.annotations.Table;
-import com.datastax.driver.mapping.annotations.PartitionKey;
-
-
-@Table(name = "person", keyspace = "mytestkeyspace")
-public class PersonTable {
-
-	@PartitionKey @Column(name = "personid") 
-	int personid;
+	private int personid;
+	private String firstName;
+	private String lastName; 
+	private int age; 
+	private String address;
 	
-	@Column(name = "first_name") 
-	String firstName;
+	public Person() {
+		
+	}
 	
-	@Column(name = "last_name") 
-	String lastName;
-	
-	@Column(name = "age") 
-	int age;
-	
-	@Column(name = "address") 
-	String address;	
+	public Person(int personid, String firstName, String lastName, int age, String address) {
+		this.personid = personid;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.address = address;
+	}
 	
 	public int getPersonid() {
 		return personid;
@@ -59,4 +54,5 @@ public class PersonTable {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+ 
 }

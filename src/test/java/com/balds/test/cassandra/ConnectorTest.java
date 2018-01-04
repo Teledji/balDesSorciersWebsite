@@ -1,4 +1,4 @@
-package com.example.test.cassandra;
+package com.balds.test.cassandra;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -13,8 +13,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.balds.cassandra.CassandraConnector;
 import com.datastax.driver.core.ResultSet;
-import com.example.cassandra.CassandraConnector;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

@@ -1,4 +1,4 @@
-package com.example.test.hello;
+package com.balds.test.hello;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;

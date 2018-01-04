@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.balds.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.balds.cassandra.CassandraConnector;
+import com.balds.cassandra.PersonTable;
+import com.balds.controllerInterface.PersonControllerInterface;
+import com.balds.dao.PersonDAO;
+import com.balds.objects.Person;
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.ResultSet;
@@ -17,11 +22,6 @@ import com.datastax.driver.core.Row;
 import com.datastax.driver.core.Statement;
 import com.datastax.driver.core.querybuilder.QueryBuilder;
 import com.datastax.driver.mapping.Result;
-import com.example.cassandra.CassandraConnector;
-import com.example.cassandra.PersonTable;
-import com.example.controllerInterface.PersonControllerInterface;
-import com.example.dao.PersonDAO;
-import com.example.objects.Person;
 
 import static com.datastax.driver.core.querybuilder.QueryBuilder.eq;
 

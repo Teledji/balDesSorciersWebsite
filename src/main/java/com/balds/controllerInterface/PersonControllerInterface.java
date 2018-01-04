@@ -1,4 +1,4 @@
-package com.example.controllerInterface;
+package com.balds.controllerInterface;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.cassandra.PersonTable;
+import com.balds.cassandra.PersonTable;
 
 public interface PersonControllerInterface {
 
