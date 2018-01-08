@@ -1,7 +1,15 @@
 package com.balds.objects;
 
+import javax.persistence.*;
+
+import com.datastax.driver.mapping.annotations.Table;
+
+@Entity
+@Table(name = "person")
 public class Person {
 
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
 	private int personid;
 	private String firstName;
 	private String lastName; 
