@@ -4,8 +4,6 @@ import java.util.Properties;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Component;
 
 import com.balds.objects.Email;
@@ -14,7 +12,6 @@ import com.balds.objects.Email;
 public class EmailDAO{
 	
 	private final static String EMAIL_ADDRESS_TO_SEND = "balds.me@gmail.com";
-	private final static String HOST = "localhost";
 	final String username = "balds.me@gmail.com";
 	final String password = "BalDesSorciers";
     private Session session; 

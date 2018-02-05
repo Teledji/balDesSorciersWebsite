@@ -42,32 +42,6 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-cassandra</artifactId>
-		</dependency>
-		
-		<dependency>
-		    <groupId>com.datastax.cassandra</groupId>
-		    <artifactId>cassandra-driver-core</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.datastax.cassandra</groupId>
-			<artifactId>cassandra-driver-extras</artifactId>
-			<version>3.1.0</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.datastax.cassandra</groupId>
-			<artifactId>cassandra-driver-mapping</artifactId>
-		</dependency>
-		
-		<dependency>
-	    	<groupId>org.cassandraunit</groupId>
-	    	<artifactId>cassandra-unit</artifactId>
-	    	<version>3.0.0.1</version>
-		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -85,9 +59,15 @@
 		</dependency>
 		
 		<dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-data-jpa</artifactId>
+	    </dependency>
+			
+		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-entitymanager</artifactId>
 		</dependency>
+		
 		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-validator</artifactId>

@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.balds.cassandra.PersonTable;
 import com.balds.controllerInterface.PersonControllerInterface;
 import com.balds.dao.PersonDAO;
 import com.balds.objects.Person;

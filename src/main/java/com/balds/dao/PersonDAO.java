@@ -10,7 +10,7 @@ import com.balds.objects.Person;
 public class PersonDAO{
 	
 	@Autowired
-	PersonRepository personRepository;
+	private PersonRepository personRepository;
 
 	public Integer getCustomerAge(int personid) {
 		return -1;
