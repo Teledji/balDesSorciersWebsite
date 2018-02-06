@@ -1,5 +1,7 @@
 package com.balds.objects;
 
+import java.sql.Date;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,9 +12,12 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.AUTO)
 	private int personid;
 	private String firstName;
-	private String lastName; 
+	private String lastName;
+	private String email;
 	private int age; 
+	private Date birthDate;
 	private String address;
+	private House houseID;
 	
 	public Person() {
 		
@@ -59,6 +64,30 @@ public class Person {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public House getHouse() {
+		return houseID;
+	}
+
+	public void setHouse(House house) {
+		this.houseID = house;
 	}
  
 }

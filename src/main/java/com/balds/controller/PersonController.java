@@ -11,6 +11,9 @@ import com.balds.controllerInterface.PersonControllerInterface;
 import com.balds.dao.PersonDAO;
 import com.balds.objects.Person;
 
+import ch.vorburger.exec.ManagedProcessException;
+import ch.vorburger.mariadb4j.DB;
+
 
 
 @RestController
